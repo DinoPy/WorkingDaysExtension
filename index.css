@@ -1,0 +1,173 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-weight: bold;
+  background-color: #53d4bd;
+  padding: 1em;
+  text-transform: lowercase;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 550px;
+  height: fit-content;
+  overflow: hidden;
+  border: 1px solid #53d4bd;
+}
+
+.order_type {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+  font-size: 1.35rem;
+}
+
+.shipping_method {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.header__right--side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+----------------------------------------------------------- html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  color: #53d4bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 100%;
+  height: 100%;
+}
+
+.month {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.month p {
+  font-size: 1rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin: 0.3rem;
+  width: calc(550px / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 0.8rem;
+  margin: 0.3rem;
+  width: calc(470px / 7);
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba (0, 0, 0, 0.5);
+}
+
+.days div:hover {
+  border: 0.3rem solid orange;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  visibility: hidden;
+  opacity: 0.5;
+}
+
+.today {
+  border-bottom: 3px rgba(241, 143, 6, 0.377) solid;
+  border: opacity 0.5;
+  font-weight: bold;
+  font-size: 1.5em !important;
+}
+
+.date p {
+  color: orange;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.warning {
+  color: #228b78;
+  margin-left: 1rem;
+  background-color: #fff;
+}
+
+#macro {
+  margin: 1.5em 0em 0 1.5em;
+}
+
+#macro::first-line {
+  margin-left: 2.5em;
+}

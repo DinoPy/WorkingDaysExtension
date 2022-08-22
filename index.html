@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charse3="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <div class="main">
+            <header class="header">
+                <div class="header__left--side">
+                    <div class="order_type">
+                        <label for="retail">
+                            <input type="radio" name="type" id="retail"  checked/>
+                            retail
+                        </label>
+                        <label for="custom">
+                            <input type="radio" name="type" id="custom" />
+                            custom
+                        </label>
+                    </div>
+
+                    <div class="shipping_method">
+                        <label for="standard">
+                            <input type="radio" name="shipping" id="standard"  checked />
+                            standard
+                        </label>
+
+                        <label for="expedited">
+                            <input
+                                type="radio"
+                                name="shipping"
+                                id="expedited"
+                                
+                            />
+                            expedited
+                        </label>
+
+                        <label for="express">
+                            <input type="radio" name="shipping" id="express" />
+                            express
+                        </label>
+                    </div>
+                </div>
+                <div class="header__right--side">
+                    <label for="before">
+                        <input type="radio" name="time" id="before" checked/>Before 3PM
+                    </label>
+                    <label for="after">
+                        <input type="radio" name="time" id="after" />
+                        After 3PM
+                    </label>
+                </div>
+            </header>
+
+            <div class="container">
+                
+                <div class="calendar">
+                    <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">
+                            <h1></h1>
+                            <p> Date? </p>
+                        </div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>        
+                    <div class="days">
+                        
+                    </div>
+            <p class="warning">This app does not cover for legal off days</p>
+                </div>
+            </div>
+            <p id="macro">
+                Macro
+            </p>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

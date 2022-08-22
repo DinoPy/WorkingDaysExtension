@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Business days calculator",
+    "version": "1.0.0",
+    "description": "Gets the business day (not counting the legal off days)",
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup" : "index.html"
+    }
+  
+}
